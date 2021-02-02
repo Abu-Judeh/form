@@ -1,0 +1,28 @@
+<label>
+    Name:
+    <input type="text" [formControl]="name">
+  </label><br><br>
+  <label>
+    mobile number:
+    <input type="text" [formControl]="mobileNum"><br><br>
+  </label>
+  <label>
+Email:
+    <input type="text" [formControl]="email">
+  </label><br><br>
+  <p>
+    Value: {{ name.value }}
+  </p><br><br>
+  <form [formGroup]="profileForm">
+  
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+  
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  
+  </form>
